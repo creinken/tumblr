@@ -4,7 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
+gem 'rails', '= 5.2.3'
+gem 'railties', '= 5.2.3'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -26,6 +27,14 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+#bundle exec rake doc:rails generates the API under doc/api
+gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'devise'
+gem 'passenger', '~> 6.0.2', require: 'phusion_passenger/rack_handler'
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
